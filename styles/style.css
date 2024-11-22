@@ -17,4 +17,233 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--fonts),sans-serif;
+  font-variation-settings:"wght" var(--font-weight-text);
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  background-image: var(--bgd-image);
+  background-attachment: fixed;
+  background-size: cover;
+
+  
+}
+
+.header{
+  margin-block-start: 100px;
+  margin-inline: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
+  width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  background-color: var(--main-background-color);
+  border:2px solid var(--main-text-color);
+  display: grid;
+  justify-items: center;
+  font-family: var(--accent-fonts);
+  text-transform: uppercase;
+}
+
+.heading{
+margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+font-weight: var(--font-weight-text);
+}
+
+.subtitle{
+margin-block-start: 20px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu {
+margin-block: 25px;
+
+}
+
+.header__theme-menu{
+
+}
+
+.theme-menu__list{
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  padding-inline-start: 20px;
+
+}
+
+.theme-menu__item{ 
+  text-align:left;
+}
+
+.theme-menu__button{
+
+text-transform: uppercase;
+font-size :14px ;
+line-height: 14px;
+background-color: transparent;
+border: 1px solid transparent;
+
+position: relative;
+}
+
+.theme-menu__button:disabled {
+  opacity: 60%;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  left: -15px;
+  opacity: 60%;
+  /*
+  top: 1px;
+  left: -14px;
+  
+  opacity: 60%;
+  animation: arrow 0.5s ease-in-out infinite alternate;/*/
+}
+
+.section{
+margin-block-start: 100px;
+  margin-inline: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
+  width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  display: grid;
+gap:50px;
+}
+
+.article{
+  background-color: var(--main-background-color);
+  border:2px solid var(--main-text-color);
+}
+
+.title{
+font-weight: var(--font-weight-title);
+font-size: 18px;
+line-height: 21.78px;
+
+padding-block: clamp(0.1875rem, 0.1435rem + 0.1878vw, 0.3125rem);
+  padding-inline: 10px;
+}
+
+.picture-section{
+  max-width: 100%;
+  height: 698px;
+  border-top:2px solid var(--main-text-color);
+  border-bottom:2px solid var(--main-text-color);
+  position: relative;
+}
+
+
+.picture{
+  object-fit: cover;
+ 
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+}
+
+.label{
+  position: absolute;
+  mix-blend-mode: hard-light;
+  z-index: 1;
+  right: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
+  top: 25px;
+  font-family: var(--accent-fonts);
+font-size: 14px;
+font-weight: var(--font-weight-text);
+opacity: 50%;
+  text-shadow:
+  -1px 0 var(--main-background-color), 
+ 0 1px var(--main-background-color), 
+ 1px 0 var(--main-background-color), 
+ 0 -1px var(--main-background-color);
+}
+
+@supports (-webkit-text-stroke-width: 1px){
+  .label {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--main-background-color);
+   text-shadow: none;
+  }
+ }
+
+/*
+border: 1px solid var(--Themes-background, #FFFFFF)
+border: 1px solid var(--Themes-background, var(--main-background-color))*/
+
+
+
+.text-section{
+  margin-block-start: 25px;
+margin-inline: 26px;
+display: grid;
+gap: 27px;
+}
+
+.text{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+}
+
+.button-section{
+  margin-block: 25px;
+  margin-inline-end: 25px;
+  display: flex;
+  justify-content: end;
+  
+}
+
+.card__icon-button{
+
+  background-color: transparent;
+  border:1px solid transparent;
+  width: ;
+  height: ;
+}
+
+.like-icon{
+
+}
+
+.is-liked{
+
+}
+
+.card__like-button{
+  margin-inline-start: 12px;
+  border:2px solid var(--main-text-color);
+  background-color: transparent;
+  width: 130px;
+  height: 38px;
+}
+
+.button__text{
+font-family: var(--accent-fonts);
+font-weight: var(--font-weight-text);
+font-size: 14px;
+}
+
+.footer{
+
+}
+
+
+/*
+накинуть на картинку фильтер для примера, возможно фильтры через чилдрн делать
+
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+*/
+
+/* ВАЖНО дискета где прописать карточку*/
+
+@media(width <= 375px){
+  .picture-section{
+    height: 375px;
+  }
+
+   /*Ширина секций с контентом (шапка и карточки) резиновая, используйте clamp или относ единицы, 
+   а на мобильном устройстве — растяните их на всю ширину.
+  Для реализации этой ширины удобно внедрить дополнительный класс,
+  а размер вынести в переменную.*/
 }
