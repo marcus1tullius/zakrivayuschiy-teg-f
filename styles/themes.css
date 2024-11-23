@@ -14,6 +14,7 @@
   --bgd-image: repeating-linear-gradient(to left, #000 0 2px, var(--transparent) 2px 4px),
   repeating-linear-gradient(#000 0 2px, var(--transparent) 2px 4px),
   linear-gradient(to bottom, #007f0c, #004306);
+  --span-text: #00CC14;
 }
 
 :root.theme-light {
@@ -25,10 +26,8 @@
   --bgd-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, var(--transparent) 2px 4px),
   repeating-linear-gradient(#d3d3d3 0 2px, var(--transparent) 2px 4px),
   linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --span-text: #FFFFFF;
 }
-
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -40,5 +39,6 @@
     --bgd-image: repeating-linear-gradient(to left, #000 0 2px, var(--transparent) 2px 4px),
     repeating-linear-gradient(#000 0 2px, var(--transparent) 2px 4px),
     linear-gradient(to bottom, #007f0c, #004306);
+    --span-text: #00CC14;
   }
 }

@@ -10,5 +10,10 @@
 --bgd-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, var(--transparent) 2px 4px),
 repeating-linear-gradient(#d3d3d3 0 2px, var(--transparent) 2px 4px),
 linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a); 
+--span-text: #FFFFFF;
+--red-fill:#FF0000;
 }
 
+:root {
+  --modal-backdrop-color: rgba(0, 0, 0, 0,5);
+}
