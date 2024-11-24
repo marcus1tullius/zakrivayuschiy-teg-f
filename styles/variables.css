@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root{
 --fonts: "Inter-Variable", sans-serif;
---accent-fonts: "PressStart2P", sans-serif;
+--accent-fonts: "PressStart2P", fantasy;
 --font-weight-text:400;
 --font-weight-title:700;
 --main-background-color: #FFFFFF;
@@ -12,8 +12,4 @@ repeating-linear-gradient(#d3d3d3 0 2px, var(--transparent) 2px 4px),
 linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a); 
 --span-text: #FFFFFF;
 --red-fill:#FF0000;
-}
-
-:root {
-  --modal-backdrop-color: rgba(0, 0, 0, 0,5);
 }
