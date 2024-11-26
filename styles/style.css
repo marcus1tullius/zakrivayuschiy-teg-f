@@ -232,7 +232,7 @@
   margin-inline-end: 25px;
   display: flex;
   justify-content: end;
-  gap: 12px;
+  gap: 7px;
   height: 38px;
 }
 
@@ -434,7 +434,7 @@ dialog::backdrop {
 .form-modal {
   display: flex;
   justify-self: center;
-  align-self: center;
+  align-self: baseline;
 }
 
 .button-modal {
